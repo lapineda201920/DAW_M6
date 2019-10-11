@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ca">
+	<head>
+		<meta charset="utf-8">
+		<title>Practica 02 - Ex 4</title>
+	</head>
+	<body>
+		<script>
+			var resposta = prompt("Què vols calcular\n\n1) Area\n2) Circumferencia\n");
+			switch (resposta){
+				case "1":
+					var radi = prompt("Introduiex un radi: ");
+					var quadrat = radi * radi * 3.14;
+					alert("\nEl resultat és: "+quadrat);
+				break;
+				case "2":
+					var diametre = prompt("Introduiex un diametre: ");
+					var circumferencia = diametre * 3.14;
+					alert("\nEl resultat és: "+circumferencia);
+				break;
+				default:
+					alert("\nNumero incorrecte\n");
+					var resposta = prompt("Què vols calcular\n\n1) Area\n2) Circumferencia\n");
+				break;
+			}
+		</script>
+	</body>
+</html>

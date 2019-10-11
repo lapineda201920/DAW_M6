@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ca">
+	<head>
+		<meta charset="utf-8">
+		<title>Practica 02 - Ex 2</title>
+	</head>
+	<body>
+		<script>
+			var valor = prompt("Introduiex un valor: ");
+			while (valor<1){
+				alert("\nEl numero ha de ser major que 0\n");
+				var valor = prompt("Introduiex un valor: ");
+			}
+
+			var valor_8 = valor*0.08;
+			var valor_16 = valor*0.16;
+			var valor_21 = valor*0.21;
+
+			alert("L'IVA és: "+valor_8+"€ aplicant un 8%\nL'IVA és: "+valor_16+"€ aplicant un 16%\nL'IVA és: "+valor_21+"€ aplicant un 21%");
+		</script>
+	</body>
+</html>

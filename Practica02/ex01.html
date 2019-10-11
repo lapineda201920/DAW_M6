@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ca">
+	<head>
+		<meta charset="utf-8">
+		<title>Practica 02 - Ex 1</title>
+	</head>
+	<body>
+		<script>
+			var base = prompt("Introduiex la base: ");
+			while (base<1){
+				alert("\nEl numero ha de ser major que 0\n");
+				var base = prompt("Introduiex la base: ");
+			}
+
+			var altura = prompt("Introduiex la altura: ");
+			while (altura<1){
+				alert("\nEl numero ha de ser major que 0\n");
+				var altura = prompt("Introduiex la altura: ");
+			}
+
+			var total = base*altura/2;
+			alert("L'area del triangle és: "+total);
+		</script>
+	</body>
+</html>

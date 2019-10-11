@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ca">
+	<head>
+		<meta charset="utf-8">
+		<title>Practica 02 - Ex 3</title>
+	</head>
+	<body>
+		<script>
+			var dies = prompt("Introduiex uns numero de dies: ");
+			while (dies<1 || dies>19){
+				alert("\nEl numero ha de ser major que 0 i menor que 20\n");
+				var dies = prompt("Introduiex uns numero de dies: ");
+			}
+
+			var hores = dies*24;
+			var minuts = hores*60;
+			var segons = minuts*60;
+			alert("Són "+segons+" segons");
+		</script>
+	</body>
+</html>
