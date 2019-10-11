@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ca">
+	<head>
+		<meta charset="utf-8">
+		<title>Exercici 02</title>
+	</head>
+	<body>
+		<script>
+			var nom = prompt("Introdueix el teu nom: ");
+			var ed = prompt("Introdueix la teva edat: ");
+			var edat = parseInt (ed);
+			
+			if (edat<15 || edat>29){
+				if (edat<15){
+					alert ("\nEts massa petit");
+				}
+				if (edat>29){
+				alert ("\nMolt vell per jugar, no?");
+				}
+			}
+			else{
+				if (nom== ""){
+					nom="desconegut";
+				}
+				alert ("\nBenvolgut "+nom+"\nles nostres partides començen tots els dies\nde 21 a 24 hores, excepte caps de setmana\n");
+			}
+		</script>
+	</body>
+</html>

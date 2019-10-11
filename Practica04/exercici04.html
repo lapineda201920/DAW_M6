@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ca">
+	<head>
+		<meta charset="utf-8">
+		<title>Exercici 04</title>
+	</head>
+	<body>
+		<script>
+			var resposta = prompt("\nIntrodueix un número: ");
+			var opcio = prompt("\---Conversió de...\n1.- Hexadecimal\n2.- Octal\n3.- inari\n...a decimal---");
+
+			if (opcio==1){
+				alert ("El número "+resposta+" es en decimal "+parseInt(resposta, 16));
+			}
+			if (opcio==2){
+				alert ("El número "+resposta+" es en decimal "+parseInt(resposta, 8));
+			}
+			if (opcio==3){
+				alert ("El número "+resposta+" es en decimal "+parseInt(resposta, 2));
+			}			
+		</script>
+	</body>
+</html>

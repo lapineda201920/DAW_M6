@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ca">
+	<head>
+		<meta charset="utf-8">
+		<title>Exercici 03</title>
+	</head>
+	<body>
+		<script>
+			var contador = 2;
+			var nvegades = 1;
+			var total = 1;
+			var resposta = prompt("\nIntrodueix un número (1-50): ");
+			
+			while (resposta<1 || resposta>50){
+				alert ("Oooops!");
+				var resposta = prompt("\nIntrodueix un número (1-50): ");
+			}
+			while (nvegades!=resposta){
+				total = contador * total;
+				contador++;
+				nvegades++;
+			}
+			alert ("Resultat: "+total);
+		</script>
+	</body>
+</html>
