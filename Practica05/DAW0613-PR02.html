@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8" />
+	<title>DAW0613-Pràctica 02</title>
+	<link href="imatges/favicon.ico" type="image/ico" rel="Shortcut Icon"/>
+	<link href="codi/estil.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header>Dia de la setmana</header>
+	<br />
+
+	<table>
+	  <tr>
+	    <td id="any"></td>
+	  </tr>
+	  <tr>
+	    <td id="mes"></td>
+	  </tr>
+	  <tr>
+	    <td id="dia"></td>
+	  </tr>
+	  <tr>
+	    <td id="diasetmana"></td>
+	  </tr>
+	</table>
+
+	</br></br>
+	<h3 id="resultat"></h3>
+
+	<script>
+
+		var ndiaset = undefined;
+
+		while (ndiaset == undefined){
+			var dia = prompt("Indica el dia (1-31)");
+			while (dia<1 || dia>31){
+				alert ("Només nombres entre 1 i 31, si us plau");
+				dia = prompt("Indica el dia (1-31)");
+			}
+			document.getElementById("dia").innerHTML = dia;
+
+
+
+			var mes = prompt("Indica el mes (1-12)");
+			while (mes<1 || mes>12){
+				alert ("Només nombres entre 1 i 12, si us plau");
+				mes = prompt("Indica el mes (1-12)");
+			}
+
+			var mesos = ["Gener", "Febrer", "Març", "Abril", "Maig", "Juny","Juliol", "Agost", "Setembre", "Octubre", "Novembre", "Desembre"];
+
+			var mes1=mesos[mes-1];
+
+			var mesos2 = ["e Gener", "e Febrer", "e Març", "'Abril", "e Maig", "e Juny","e Juliol", "'Agost", "e Setembre", "'Octubre", "e Novembre", "e Desembre"];
+
+			var mes2=mesos2[mes-1];
+
+			document.getElementById("mes").innerHTML = mes1;
+
+
+
+
+			var any = prompt("Indica el any (1940-2030)");
+			while (any<1940 || any>2030){
+				alert ("Només nombres entre 1940 i 2030, si us plau");
+				any = prompt("Indica el any (1940-2030)");
+			}
+
+
+
+			
+			document.getElementById("any").innerHTML = any;
+
+
+			var diasetmana = ["Dilluns", "Dimarts", "Dimecres", "Dijous", "Divendres", "Dissabte", "Diumenge"];
+
+
+			var diaset = new Date(any, mes-1, dia);
+			ndiaset = diasetmana[diaset.getDay()-1];
+
+
+			document.getElementById("diasetmana").innerHTML = ndiaset;
+
+			if (ndiaset == undefined){
+				alert ("La data "+dia+"-"+mes+"-"+any+" no existeix\nSi us plau, torni a entrar les dades");
+			}
+		}
+		
+
+
+		var temps = ["va caure en", "és avui", "caurà en"];
+		var numero = 0;
+		var dia_avui = new Date();
+		
+		dia_avui = dia_avui.setHours(0,0,0,0);
+		diaset = diaset.setHours(0,0,0,0);
+
+		if (diaset > dia_avui){
+			numero = 2;
+		}
+		else if (diaset==dia_avui){
+			numero = 1;
+		}
+		else{
+			numero = 0;
+		}
+
+
+		var resultat = "El dia "+dia+" d"+mes2+" de "+any+" "+temps[numero]+": "+ndiaset;
+
+		document.getElementById("resultat").innerHTML = resultat;
+
+	</script>
+
+	<noscript>
+		El seu navegador no accepta Javascript, si us plau actualitzis a una versió mes moderna.
+	</noscript>
+
+	</br>
+	<footer>
+		2016 Departament d'Informàtica - INS LA PINEDA - BADALONA<span>DAW M06-Desenvolupament Web en Entorn Client</span>
+
+	</footer>
+</body>
+</html>

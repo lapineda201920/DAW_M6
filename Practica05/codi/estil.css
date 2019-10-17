@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: LuckiestGuy;
+	src: url('LuckiestGuy.ttf');
+}
+@font-face {
+	font-family: Overlock;
+	src: url('Overlock-Black.ttf');
+}
+@font-face {
+	font-family: Cagliostro;
+	src: url('Cagliostro-Regular.ttf');
+}
+
+@font-face {
+	font-family: Skranji;
+	src: url('Skranji-Bold.ttf');
+}
+/******************************************/
+
+body {
+	font-family: 'Overlock', sans-serif;
+	background: #FFC;
+	margin: 0px;
+	background-image:url('../imatges/logo_ins_petit.svg'),url('../imatges/m06.svg');
+	background-position: center center, 5px 40px;
+	background-repeat: repeat, no-repeat;
+}
+header {
+	font-family: 'LuckiestGuy',sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	background: #FC9;
+	padding-top: 5px;
+	text-align: center;
+	color: crimson;
+	text-shadow: 2px 2px black;
+}
+h3 {
+	color: #CC0000;
+	text-align: center;
+	font-family: 'Cagliostro', sans-serif;
+}
+
+h3 span {
+	font-size: 1.2em;
+	color: darkred;
+	font-weight: bold;
+}
+/******************************************/
+
+footer {
+	position:absolute;
+	bottom:0;
+	
+	width:100%;
+	height: 20px;
+	
+	text-align: center;
+	letter-spacing: .1px;
+	font-family: 'Cagliostro', sans-serif;
+	font-size: .8em;
+	background: #CCCCFF;
+	color: darkblue;
+	padding:3px 0px 0px 0px;
+	margin: 0px;
+}
+footer span{
+	color: white;
+	font-weight: bold;
+	padding-left:25px;
+}
+/******************************************/
+
+td, tr{
+	width: 250px;
+	color: white;
+	text-shadow: 2px 2px 2px #050505;
+}
+td {
+	
+	border:0px solid #ff0000;
+	border-width:0px 1px 1px 0px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0px;
+	
+}
+tr {
+	border: 0px solid #CCCCCC;
+	text-align: center;
+	vertical-align: middle;
+}
+tr:nth-child(1) {
+  background-color:orange;
+  font-size:70px;
+}
+tr:nth-child(2) {
+  background-color:#FEE9BF;
+  font-size:36px;
+  height:60px;
+}
+tr:nth-child(3) {
+  background-color:#FED280;
+  height:120px;
+  font-family: 'Skranji', sans-serif;
+  font-size:120px;
+}
+tr:nth-child(4) {
+  background-color:#B27400;
+  font-size:28px;
+  height:50px;
+}
+table {
+	border: 3px solid #990000;
+	margin: auto auto;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 26px;
+	
+	-webkit-box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    7px 7px 5px rgba(50, 50, 50, 0.75);
+	box-shadow:         7px 7px 5px rgba(50, 50, 50, 0.75);
+}
