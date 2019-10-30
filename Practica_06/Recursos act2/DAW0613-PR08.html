@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="ca">
+<head>
+	<meta charset="utf-8" />
+	<title>DAW0612-Pràctica 08</title>
+	<link href="imatges/favicon.ico" type="image/ico" rel="Shortcut Icon"/>
+	<link href="codi/estil.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header>A l'inrevés</header>
+	<br />
+	<div id="missatge"></div>
+	<h3 id="paraula"></h3>
+	<h4 id="caracters"></h4>
+	<p id="consonants"></p>
+	<p id="vocals"></p>
+	<p id="espais"></p>
+	<p id="especials"></p>
+
+
+	<script>
+
+		/************ COMENÇEU AQUÍ EL VOSTRE CODI ***************************************************************/
+
+		var paraula = prompt("Entra una paraula o una frase en minúscules (30 caràcters màxim)");
+		while (paraula.length<1 || paraula.length>30){
+			alert ("Només paraules o frases entre 1 i 30 caràcters, si us plau");
+			paraula = prompt("Entra una paraula o una frase en minúscules (30 caràcters màxim)");
+		}
+		while (paraula.match(/[0-9]/g)){
+			alert ("No introduèixis números!");
+			paraula = prompt("Entra una paraula o una frase en minúscules (30 caràcters màxim)");
+		}
+		var fraseinreves = paraula.split("").reverse().join("");
+		var frase = paraula;
+		var lfrase = paraula.length;
+		var consonants = paraula.match(/[^aeiou ]/gi);
+		if (consonants == null) {
+			consonants = 0;
+		}
+		else{
+			consonants=consonants.length;
+		}
+
+		var vocals = paraula.match(/[aeiou]/gi);
+		if (vocals == null) {
+			vocals = 0;
+		}
+		else{
+			vocals=vocals.length;
+		}
+
+		var espais = paraula.match(/[\s]/g);
+		if (espais == null) {
+			espais = 0;
+		}
+		else{
+			espais=espais.length;
+		}
+
+		var especials = paraula.match(/[ñç]/gi);
+		if (especials == null) {
+			especials = 0;
+		}
+		else{
+			especials=especials.length;
+		}
+
+
+
+		/************ NO TOQUEU EL SEGÜENT CODI ***************************************************************/
+
+		document.getElementById("missatge").innerHTML = fraseinreves;
+		document.getElementById("paraula").innerHTML = "Paraula o frase original: <span>" + frase + "</span>";
+		document.getElementById("caracters").innerHTML = "Nombre de caràcters: " + lfrase;
+		document.getElementById("consonants").innerHTML = "Consonants: " + consonants;
+		document.getElementById("vocals").innerHTML = "Vocals: " + vocals;
+		document.getElementById("espais").innerHTML = "Espais en blanc: " + espais;
+		document.getElementById("especials").innerHTML = "Lletres ñ o ç: " + especials;
+
+	</script>
+	<noscript>
+		El seu navegador no accepta Javascript, si us plau actualitzis a una versió mes moderna.
+	</noscript>
+	<br />
+	<footer>
+		2016 Departament d'Informàtica - INS LA PINEDA - BADALONA<span>DAW M06-Desenvolupament Web en Entorn Client</span>
+	</footer>
+</body>
+</html>

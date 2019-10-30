@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: LuckiestGuy;
+	src: url('LuckiestGuy.ttf');
+}
+@font-face {
+	font-family: Overlock;
+	src: url('Overlock-Black.ttf');
+}
+@font-face {
+	font-family: Cagliostro;
+	src: url('Cagliostro-Regular.ttf');
+}
+
+body {
+	font-family: 'Overlock', sans-serif;
+	background: #FFC;
+	margin: 0px;
+	background-image:url('../imatges/logo_ins_petit.svg'),url('../imatges/m06.svg');
+	background-position: center center, 5px 40px;
+	background-repeat: repeat, no-repeat;
+	overflow: hidden;
+}
+header {
+	font-family: 'LuckiestGuy',sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	background: #FC9;
+	padding-top: 5px;
+	text-align: center;
+	color: crimson;
+	text-shadow: 2px 2px black;
+}
+div {
+	padding:20px;
+	width:50%;
+	height: 50px;
+	background-color: gold;
+	text-align: center;
+	margin:auto;
+	font-size: 32px;
+	text-shadow: 2px 2px white;
+	box-shadow: 0 0 5px 5px #888;
+}
+p{
+	text-align: center;
+	color: darkred;
+	font-size: 16px;
+}
+h3 {
+	color: #CC0000;
+	text-align: center;
+
+}
+h4 {
+	color: green;
+	text-align: center;
+}
+h3 span {
+
+	color: blue;
+}
+
+footer {
+	position:fixed;
+	bottom:0;
+
+	width:100%;
+	height: 20px;
+
+	text-align: center;
+	letter-spacing: .1px;
+	font-family: 'Cagliostro', sans-serif;
+	font-size: .8em;
+	background: #CCCCFF;
+	color: darkblue;
+	padding:3px 0px 0px 0px;
+	margin: 0px;
+}
+footer span{
+	color: white;
+	font-weight: bold;
+	padding-left:25px;
+}
+
+td, tr{
+	width: 400px;
+	height:40px;
+}
+td {
+
+	border:0px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0px;
+
+}
+td:first-child {
+	background-color: blue;
+	color:white;
+	text-align:right;
+	padding-right:25px;
+
+
+}
+
+tr td:last-child{
+	font-size: 20px;
+}
+tr {
+	border: 0px solid #CCCCCC;
+	text-align: center;
+	vertical-align: middle;
+}
+tr:first-child td{
+	background-color: red;
+	color: white;
+}
+tr:first-child td:first-child{
+	background-color:yellow;
+	text-shadow: 2px 2px 6px black;
+	text-align: center;
+}
+
+
+tr:nth-child(odd){ background-color:#aad4ff; }
+
+table {
+	border: 3px solid #990000;
+	margin: auto auto;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 24px;
+	box-shadow: 0 0 5px 5px #888;
+}

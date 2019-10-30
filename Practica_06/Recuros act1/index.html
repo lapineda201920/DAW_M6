@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8" />
+	<title>DAW0613-Pràctica 06</title>
+	<link href="imatges/favicon.ico" type="image/ico" rel="Shortcut Icon"/>
+	<link href="css/estil.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header>TRAVESSA</header>
+	<br />
+
+	<table>
+		<tr>
+			<td>P</td>
+			<td>1</td>
+			<td>X</td>
+			<td>2</td>
+		</tr>
+
+		<script>
+			var u=0, dos=0, tres=0;
+			for (var i=1;i<=14;i++) {
+				var aleatori= Math.floor(Math.random() * (4 - 1)) + 1;
+
+				document.write("<tr><td>"+i+"</td>");
+				if (aleatori==2) {
+					document.write("<td>X</td><td></td><td></td></tr>");
+					u ++;
+				}
+				if (aleatori==1) {
+					document.write("<td></td><td>X</td><td></td></tr>");
+					dos ++;
+				}
+				if (aleatori==3) {
+					document.write("<td></td><td></td><td>X</td></tr>");
+					tres ++;
+				}
+			}
+		</script>
+
+	</table>
+
+	<div>
+		<p>Estadístiques</p>
+
+		<script>
+			document.write("<p> 1 = "+u+"</p>");
+			document.write("<p> X = "+dos+"</p>");
+			document.write("<p> 2 = "+tres+"</p>");
+		</script>
+
+	</div>
+	
+	
+
+	<noscript>
+		El seu navegador no accepta Javascript, si us plau actualitzis a una versió mes moderna.
+	</noscript>
+
+	</br>
+	<footer>
+		2016 Departament d'Informàtica - INS LA PINEDA - BADALONA<span>DAW M06-Desenvolupament Web en Entorn Client</span>
+	</footer>
+</body>
+</html>
