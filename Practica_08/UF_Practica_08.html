@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8" />
+	<title>DAW063-Pràctica 14</title>
+	<link href="imatges/favicon.ico" type="image/ico" rel="Shortcut Icon"/>
+	<link href="codi/estil.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header>Objecte: WINDOW</header>
+	<br />
+
+	<div id="taula"></div>
+
+	<script>
+		var finestra = window.open("","La meva finestra","width=900,height=300");
+		finestra = finestra.document.write("<!doctype html><html lang='ca'><head><meta charset='UTF-8' /><title>DAW063-Pràctica 14</title><link href='imatges/favicon.ico' type='image/ico' rel='Shortcut Icon'/><link href='codi/estil.css' rel='stylesheet' type='text/css' /></head><body><header>Objecte: WINDOW 'LA MEVA FINESTRA'</header><br /><table><tr><td>Propietat o Mètode </td><td>Valor</td></tr><tr><td>Propietat name: </td><td>"+finestra.name+"</td></tr></table><br /><a><button>Mou al punt 830 ,564&gt;</button><button>&lt;Torna al punt 0,0</button></a></body></html>");
+
+		// No he entés quan demana que la finestra es mogui a l'origen de coordenades.
+		// No he trobat en el css la classe / tag corresponent al botó de SORTIR que demana l'exercici. (El qual sería un window.close();)
+
+		var resultat = "<table><tr><td>Propietat o Mètode </td><td>Valor</td></tr><tr><td>Propietat closed: </td><td>"+window.closed+"</td></tr><tr><td>Propietat innerHeight: </td><td>"+window.innerHeight+"</td></tr><tr><td>Propietat innerWidth: </td><td>"+window.innerWidth+"</td></tr><tr><td>Propietat lenght: </td><td>"+window.lenght+"</td></tr><tr><td>Propietat location: </td><td>"+window.location.href+"</td></tr><tr><td>Propietat name: </td><td>"+window.name+"</td></tr><tr><td>Propietat opener: </td><td>"+window.opener+"</td></tr><tr><td>Propietat outerHeiht: </td><td>"+window.outerHeight+"</td></tr><tr><td>Propietat outerWidth: </td><td>"+window.outerWidth+"</td></tr></table>";
+
+
+		document.getElementById("taula").innerHTML = resultat;
+	</script>
+	<noscript>
+		El seu navegador no accepta Javascript, si us plau actualitzis a una versió mes moderna.
+	</noscript>
+	<br>
+	<footer>
+		2016 Departament d'Informàtica - INS LA PINEDA - BADALONA<span>DAW M06-Desenvolupament Web en Entorn Client</span>
+	</footer>
+</body>
+</html>
