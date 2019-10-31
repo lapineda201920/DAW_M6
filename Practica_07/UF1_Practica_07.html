@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8" />
+	<title>DAW0613-Pràctica 11</title>
+	<link href="imatges/favicon.ico" type="image/ico" rel="Shortcut Icon"/>
+	<link href="codi/estil.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header>Amb vocal</header>
+	<br />
+	<div id="vocals"></div>
+
+	<script>
+		var paraula = prompt("Entra una paraula o una frase (25 caràcters màxim)");
+		while (paraula.length<1 || paraula.length>25){
+			alert ("Només paraules o frases entre 1 i 25 caràcters, si us plau");
+			paraula = prompt("Entra una paraula o una frase (25 caràcters màxim)");
+		}
+		var vocals = paraula.match(/[aeiou]/gi);
+		if (vocals == null) {
+			alert ("La paraula o frase no conté cap vocal!")
+		}
+		paraula = paraula.toLowerCase();
+
+		var ambvocals_a = paraula.replace(/[aeiouàèìòùáéíóú]/gi, 'a');
+		var ambvocals_e = paraula.replace(/[aeiouàèìòùáéíóú]/gi, 'e');
+		var ambvocals_i = paraula.replace(/[aeiouàèìòùáéíóú]/gi, 'i');
+		var ambvocals_o = paraula.replace(/[aeiouàèìòùáéíóú]/gi, 'o');
+		var ambvocals_u = paraula.replace(/[aeiouàèìòùáéíóú]/gi, 'u');
+
+		var ambvocals = "<h3>"+paraula+"</h3><p>"+ambvocals_a+"</p><p>"+ambvocals_e+"</p><p>"+ambvocals_i+"</p><p>"+ambvocals_o+"</p><p>"+ambvocals_u+"</p>";
+		
+
+
+        /* SORTIDA DE LA VARIABLE CONSTRUIDA AMB CADASCUNA DE LES 5 VOCALS */
+
+        document.getElementById("vocals").innerHTML = ambvocals;
+
+	</script>
+	<noscript>
+		El seu navegador no accepta Javascript, si us plau actualitzis a una versió mes moderna.
+	</noscript>
+	<br />
+	<footer>
+		2016 Departament d'Informàtica - INS LA PINEDA - BADALONA<span>DAW M06-Desenvolupament Web en Entorn Client</span>
+	</footer>
+</body>
+</html>
