@@ -15,10 +15,12 @@
 
 	<script>
 		var finestra = window.open("","La meva finestra","width=900,height=300");
-		finestra = finestra.document.write("<!doctype html><html lang='ca'><head><meta charset='UTF-8' /><title>DAW063-Pràctica 14</title><link href='imatges/favicon.ico' type='image/ico' rel='Shortcut Icon'/><link href='codi/estil.css' rel='stylesheet' type='text/css' /></head><body><header>Objecte: WINDOW 'LA MEVA FINESTRA'</header><br /><table><tr><td>Propietat o Mètode </td><td>Valor</td></tr><tr><td>Propietat name: </td><td>"+finestra.name+"</td></tr></table><br /><a><button>Mou al punt 830 ,564&gt;</button><button>&lt;Torna al punt 0,0</button></a></body></html>");
 
-		// No he entés quan demana que la finestra es mogui a l'origen de coordenades.
-		// No he trobat en el css la classe / tag corresponent al botó de SORTIR que demana l'exercici. (El qual sería un window.close();)
+		finestra = finestra.document.write("<!doctype html><html lang='ca'><head><meta charset='UTF-8' /><title>DAW063-Pràctica 14</title><link href='imatges/favicon.ico' type='image/ico' rel='Shortcut Icon'/><link href='codi/estil.css' rel='stylesheet' type='text/css' /></head><body><header>Objecte: WINDOW 'LA MEVA FINESTRA'</header><br /><table><tr><td>Propietat o Mètode </td><td>Valor</td></tr><tr><td>Propietat name: </td><td>"+finestra.name+"</td></tr></table><br /><a><button onclick='window.moveTo(830,564)'>Mou al punt 830 ,564&gt;</button><button onclick='window.moveTo(0,0)'>&lt;Torna al punt 0,0</button></a><a onclick='window.close()'>Sortir</a></body></html>");
+
+		// Tal qual tinc la pàgina ara maetix, no he sigut capç d'executar aquest troç de codi, ja que em sortia error amb el js d'aquesta pàgina amb la de la finestra que obro. A continuació deixo el codi que faltaria per implementar:
+
+		//<script>var altura=parseInt((window.screen.height/2)-(300/2));var amplada=parseInt((window.screen.width/2)-(900/2));alert(altura);<'+'/script>
 
 		var resultat = "<table><tr><td>Propietat o Mètode </td><td>Valor</td></tr><tr><td>Propietat closed: </td><td>"+window.closed+"</td></tr><tr><td>Propietat innerHeight: </td><td>"+window.innerHeight+"</td></tr><tr><td>Propietat innerWidth: </td><td>"+window.innerWidth+"</td></tr><tr><td>Propietat lenght: </td><td>"+window.lenght+"</td></tr><tr><td>Propietat location: </td><td>"+window.location.href+"</td></tr><tr><td>Propietat name: </td><td>"+window.name+"</td></tr><tr><td>Propietat opener: </td><td>"+window.opener+"</td></tr><tr><td>Propietat outerHeiht: </td><td>"+window.outerHeight+"</td></tr><tr><td>Propietat outerWidth: </td><td>"+window.outerWidth+"</td></tr></table>";
 
@@ -34,3 +36,5 @@
 	</footer>
 </body>
 </html>
+
+		
