@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>DAW0620-CTR1E</title>
+    <link href="imatges/angelfavicon3.png" type="image/png" rel="Shortcut Icon"/>
+	<link href="codi/estil.css" rel="stylesheet" type="text/css" />
+	<script src="codi/Vigenere.js"></script>
+
+	<script>
+		function codifica(missatge, clau){
+
+			var codi01 = new Vigenere(missatge, clau);
+			codi01.getResultatCodificat();
+		}
+
+		function decodifica(missatge, clau){
+			var codi02 = new Vigenere(missatge, clau);
+			codi02.getResultatDecodificat();
+		}
+	</script>
+
+</head>
+<body>
+    <header>DAW062-CTRB - Xifratge de Vigenère</header>
+	<br />
+
+	<div id="control" class="esquerre">
+		<form name="form" id="form">
+			<label for="missatge">Missatge:
+                <textarea name="missatge" id="missatge"  cols = "50" placeholder = "Entreu el missatge a codificar!"></textarea>
+			</label>
+			<label for="clau">Clau:
+				<input type="text" name="clau" id="clau" placeholder = "Entreu la clau!" />
+			</label>
+			<fieldset>
+				<legend>Codifica/Decodifica</legend>
+				<input type="button" name="btn_cod" id="btn_cod" value="codifica" onclick="codifica(document.form.missatge.value,document.form.clau.value)" />
+				<input type="button" name="btn_dec" id="btn_dec" value="decodifica" onclick="decodifica(document.form.missatge.value,document.form.clau.value)" />
+			</fieldset>
+			<label for="sortida">Sortida:
+				<textarea name="sortida" id="sortida" cols = "50"></textarea>
+			</label>
+				<input type="reset" />
+		</form>
+	</div>
+
+	<div id="explicacio" class="dreta">
+		<p>El xifratge Vigenère és un xifratge basat en diferents sèries de caràcters o lletres del xifratge de Cèsar formant aquests caràcters una taula, anomenada taula de Vigenère , que s'usa com a clau. El xifratge de Vigenère és un xifratge polialfabètic i de substitució.</p>
+
+		<p>El xifratge Vigenère s'ha reinventat moltes vegades. El mètode original va ser descrit per Giovan Batista Belas en el seu llibre de 1553 La xifra del Sig Giovan Batista Belas . No obstant això, va ser incorrectament atribuït més tard a Blaise de Vigenère, concretament al segle XIX, i per això encara se'l coneix com el "xifratge Vigenère".</p>
+
+		<p>Aquest xifratge és conegut perquè és fàcil d'entendre i implementar, a més sembla irresoluble, això el va fer valedor del sobrenom el codi indesxifrable ( li Chiffre indéchiffrable , en francès). </p>
+
+		<a href ="imatges/taula.png"><img height="100" src="imatges/taula.png" /></a>
+        <p>Polseu a la imatge per veure-la més gran.</p>
+	</div>
+
+	<div id="temps">
+		<p>TEMPS: 60 minuts</p>
+	</div>
+
+	<br>
+	<footer>
+		2016 Departament d'Informàtica - INS LA PINEDA - BADALONA<span>DAW M06-Desenvolupament Web en Entorn Client</span>
+	</footer>
+   
+
+
+</body>
+</html>
