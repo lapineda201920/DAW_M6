@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>DAW0632-EX01</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+    <link href="codi/estil.css" rel="stylesheet" />
+    <script src="codi/codi.js" type="application/javascript"></script>
+</head>
+<body>
+    <header>Exercicis DOM amb javascript pur</header>
+    <h3>Recordeu que no podeu afegir cap framework per fer aquests exercicis</h3>
+    
+    <h2>Construïm un menú</h2>
+    <nav>
+        <ul>
+            <li><a href="www.google.cat">Google</a></li>
+            <li><a href="www.w3schools.com">w3Schools</a></li>
+            <li><a href="www.mozilla.org/ca/" >Mozilla</a></li>
+        </ul>
+        <p> Aquest paràgraf l'heurem d'esborrrar</p>
+    </nav>
+    
+    <h2>Construïm una taula</h2>
+    <table>
+        <tr>
+            <th colspan="3">TAULA DE PROVA</th>
+        </tr>
+        <tr>
+            <td>Fila</td>
+            <td>per</td>
+            <td>esborrar</td>
+        </tr>
+        <tr>
+            <td>Molt</td>
+            <td>Bon</td>
+            <td>Dia</td>
+        </tr>
+        <tr>
+            <td>Dia</td>
+            <td>Molt</td>
+            <td>Dolent</td>
+        </tr>
+    </table>
+    
+    <h2>Construïm un formulari</h2>
+    <div class="testbox">
+        <h1>Registre</h1>
+        <form action="/">
+            <hr>
+            <div class="accounttype">
+                <input type="radio" value="None" id="radioOne" name="account" checked/>
+                <label for="radioOne" class="radio">Personal</label>
+                <input type="radio" value="None" id="radioTwo" name="account" />
+                <label for="radioTwo" class="radio">Empresa</label>
+            </div>
+            <hr>
+            <label id="icon" for="name"><i class="icon-envelope "></i></label>
+            <input type="text" name="name" id="name" placeholder="Email" required/>
+            <label id="icon" for="name"><i class="icon-user"></i></label>
+            <input type="text" name="name" id="name" placeholder="Nom" required/>
+            <label id="icon" for="name"><i class="icon-shield"></i></label>
+            <input type="password" name="name" id="name" placeholder="Crontrasenya" required/>
+            <div class="gender">
+                <input type="radio" value="None" id="home" name="gender" checked/>
+                <label for="home" class="radio">Home</label>
+                <input type="radio" value="None" id="dona" name="gender" />
+                <label for="dona" class="radio">Dona</label>
+            </div> 
+            <p> En registrar-se, vostè està d'acord en els nostres <a href="#"> termes i condicions</a>.</p>
+            <a href="#" class="button">Registre</a>
+        </form>
+    </div>
+    
+     <h2>Fem text</h2>
+    <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec sapien quis lectus porttitor cursus. Duis tincidunt ultrices pulvinar. Aenean scelerisque hendrerit elit sed euismod. Nam vulputate a tellus a eleifend. Nunc volutpat efficitur quam laoreet bibendum. Aenean ac tempor ante, vitae ornare est. Integer suscipit ullamcorper purus, non sodales nibh lobortis non. Sed eleifend justo vel est mollis, sit amet auctor massa tempus. Nullam ultrices eget justo vitae scelerisque. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec sapien quis lectus porttitor cursus. Duis tincidunt ultrices pulvinar. Aenean scelerisque hendrerit elit sed euismod. Nam vulputate a tellus a eleifend. Nunc volutpat efficitur quam laoreet bibendum. Aenean ac tempor ante, vitae ornare est. Integer suscipit ullamcorper purus, non sodales nibh lobortis non. Sed eleifend justo vel est mollis, sit amet auctor massa tempus. Nullam ultrices eget justo vitae scelerisque. </p>
+        <p>Curabitur quam urna, posuere eu neque vitae, ornare sagittis mauris. Fusce viverra, lacus non dapibus convallis, quam turpis fermentum metus, lobortis suscipit magna dolor in lorem. Praesent semper lacus et metus luctus tristique. Nunc id pretium felis. Etiam suscipit nulla massa, non molestie ex scelerisque eget. Integer malesuada elit ac nisi eleifend facilisis eu quis metus. Vestibulum id mi facilisis, pretium lorem et, pretium sapien. Maecenas elit diam, bibendum ac lectus et, fringilla pharetra mauris. Sed cursus leo in nunc tristique, vitae lobortis nisl commodo. Nullam in aliquam orci. Etiam vehicula tortor at ex finibus, sollicitudin iaculis velit hendrerit. Nam sed nunc non urna vulputate ultrices nec nec massa. </p>
+    </article>
+    
+    <h2>Treballem amb imatges</h2>
+    <section>
+        <img src="codi/imatge01.jpg" alt="tarzan comic" />
+        <img src="codi/imatge02.jpg" alt="flash comic" />
+        <img src="codi/imatge04.jpg" alt="wolverine comic" />
+    </section>
+    
+    <footer>
+        <p> Exercicis DOM</p>
+    </footer>
+
+</body>
+</html>
