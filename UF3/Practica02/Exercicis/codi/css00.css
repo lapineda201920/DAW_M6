@@ -1,0 +1,148 @@
+@import url('http://fonts.googleapis.com/css?family=Montserrat:400,700|Yanone+Kaffeesatz:400,700|Cantarell:400,700|Satisfy|Luckiest+Guy|Farsan|Fjalla+One|Yellowtail');
+
+
+body{
+    background-color:yellow;  
+}
+header{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 46px;
+    padding-top: 50px;
+    color:red;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px black;
+
+}
+ul{
+    padding-left: 33%;
+    margin-bottom: 30px;
+}
+li{
+     list-style-type: none;
+}
+h2{font-family: 'Yellowtail', cursive; color: darkgreen;}
+fieldset{margin: 10px;padding: 10px;}
+main{
+    width: 1000px;
+    display: flex; 
+    align-items:center;
+    justify-content: center;
+    margin: 0px auto;
+}
+label{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    display:inline-block;
+    width: 130px;
+}
+input{
+    padding: 5px;  
+}
+input[type='reset']{
+    margin-top: 20px; 
+}
+label input[type='radio']{
+  display:inline;
+    width:0px;
+    height:19px;
+}
+.columna{ flex-direction: column;}
+.fila{flex-direction: row;}
+.inline{display:inline;}
+.verd{color: darkgreen;}
+.roig{color:darkred;}
+.blau{color:darkblue;}
+.center{
+    display:block;
+    margin: 0 auto;
+    text-align: center;
+}
+br{font-size: 60px;}
+p{
+    font-family: 'Farsan', cursive; font-size: 1.3em; 
+    padding: 0px; margin: 3px;
+    color:darkred; font-weight: bold; 
+}
+h5{
+    font-family: 'Farsan', cursive;font-size: 1.1em;
+    color: darkgreen;
+    width: 300px;
+}
+h5 br{
+  font-size: 10px;  
+    
+}
+#sortida{
+    font-family: 'Satisfy', cursive;
+    font-size: 26px;
+    margin-top: 50px;
+    color:darkgreen;
+    width: 700px;
+    height: 150px;
+    background-color:#a7eaae;
+    display: flex; align-items: center;justify-content: center;
+    
+}
+
+.margintop{margin-top: 20px;}
+button {
+    width: 200px;
+    display:inline;
+    cursor: pointer;
+}
+.css3boto{
+	font-family: 'Cantarell', Helvetica, sans-serif;
+    font-weight: 700;
+	font-size: 16px;
+	color: #050505;
+	padding: 5px 15px;
+	background: linear-gradient(
+		to bottom,
+		#ffffff 0%,
+		#c7d95f 50%,
+		#add136 50%,
+		#6d8000);
+
+	border-radius: 14px;
+	border: 1px solid #6d8000;
+	
+    box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	
+    text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.4);
+}
+.css3boto:hover{
+    background: linear-gradient(
+		to top,
+		#ffffff 0%,
+		#c7d95f 50%,
+		#add136 50%,
+		#6d8000);
+    
+}
+.css3boto:active{
+    color:white;
+    
+}
+footer{ 
+    position:absolute;
+	bottom:0;
+	width:98%;
+	height: 20px;
+	text-align: center;
+	letter-spacing: .1px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1em;
+	color:chocolate;
+	padding-top:3px;
+    overflow: hidden;
+}
+
+footer ruby{
+	color:darkolivegreen;
+	font-weight: bold;
+	padding-left:25px;
+}

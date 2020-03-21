@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8" />
+    <title>DAW0632-EX02-Exercici#02</title>
+    <link href="codi/css00.css" rel="stylesheet" type="text/css" />
+    <script src="codi/codi02.js"></script> 
+</head>
+<body>
+
+    <header class="center">#02 Fem càlculs</header>
+    
+    <main class="columna">
+        
+        <section class="fila">
+            <math class="inline">
+                <mrow>
+                    <mo>(</mo>
+                    <msup>
+                        <mi>X</mi>
+                        <mn>3</mn>
+                    </msup>
+                    <mo>)</mo>
+                </mrow>
+            </math>
+
+            <label class="inline">El cub d'aquest nombrer:</label>
+            <input type="number" id="cub"  step="0.01" />
+            <button class="css3boto">Calculem</button>
+            <br />
+        </section>
+        
+        
+        <section class="fila">
+            <math class= "inline">
+                <mrow>
+                    <mo>(</mo>
+                    <mfrac>
+                        <mrow>
+                            <mn>1</mn>
+                        </mrow>
+                        <mrow>
+                            <mi>X</mi>
+                        </mrow>
+                    </mfrac>
+                    <mo>)</mo>
+                </mrow>
+            </math>
+
+            <label class="inline">L'invers d'aquest nombre:</label>
+            <input type="number" id="invers"  step="0.01" />
+            <button class="css3boto">Calculem</button>
+            <br />
+        </section>
+        
+        <section class="fila">
+            <label class="inline">Calculem l'area del cercle de radi:</label>
+            <input type="number" id="cercle" step="0.01"/>
+            <button class="css3boto">Calculem</button>
+            <br />
+         </section>
+
+        <section class="fila">
+            <label class="inline">Tant per cent:</label>
+            <input type="number" id="percent"  step="0.01" />
+            <label class="inline">Quantitat:</label>
+            <input type="number" id="quantitat"  step="0.1" />
+            <button class="css3boto">Calculem</button>
+            <br />
+         </section>
+            
+        <div id="sortida" class="center"></div>
+        <input class="css3boto" type="reset" value="Esborra totes les dades" />
+        
+    </main>
+    
+    
+    <footer>DEPARTAMENT D'INFORMATICA<ruby>INSTITUT LA PINEDA</ruby></footer>
+</body>
+</html>
