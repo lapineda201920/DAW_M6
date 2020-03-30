@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Drag and Drop - jQUERY</title>
+    
+    <!-- Afegim la llibreria jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Afegim la llibreria jQuery-UI -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    
+
+    <!-- estils per l'exercici -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Baloo|Hammersmith+One|Oswald');
+        ol{border:1px solid #ccc; margin:0; padding:0;}
+        
+        ol li{
+            cursor: pointer;
+            display: block;
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid #CCC;
+            color: darkgoldenrod;
+            background: #EEE;
+        }
+        header {text-align: center;color:darkcyan;}
+        h3{margin-top: -30px;color:coral;}
+        p{margin-top:-20px; color: red;}
+        body{font-family: 'Hammersmith One', sans-serif;background-Color: beige;}
+        button, input{ padding: 10px 20px; margin:5px;font-family: 'Baloo', cursive;}
+        input{ font-size: 20px; text-align: center; color:white;
+            background-Color:lightgray;font-family: 'Oswald', sans-serif;}
+        
+    </style>
+    
+
+    <script> // Utilitzem el drag & drop de jQuery, aquí
+        
+        $(function() {
+
+            // 0 - CAMVIEM EL VALOR DEL INPUT
+            $("input").val("Està ordenat");
+
+
+            // 1 - AMB AIXÒ FEM QUE ES POGUIN SELECIONAR ELS <LI> DELS <OL>
+            $( "ol" ).sortable();
+            $( "ol" ).disableSelection();
+
+
+            // 2 - QUAN ES PREMI EL BOTÓ DE COMPROVAR, ...
+            // --> COMPROVEM CADA UN DELS <LI> A VEURE SI ESTAN PER ORDRE
+            $( "button" ).click(function() {
+
+
+                // 0 - CREEM UNA VARIABLE 'resposta' DE VALOR 'true' I NETEJEM LA CONSOLA
+                var resposta = true;
+                console.clear();
+                
+
+                // 1 - PER A CADA <LI> COMPAREM SI ÉS MÉS PETIT ALFABÈTICAMENT QUE EL SEGÜENT
+                $( "li" ).each(function( index ) {
+
+                    // 1A - FEM AQUEST IF() PER A QUE NO COMPARI L'ÚLTIM <LI> AMB RES
+                    if($( this ).next().text() != ""){
+
+                        var resultat = $( this ).text().localeCompare( $( this ).next().text() );
+
+                        if (resultat == 1){
+
+                            resposta = false;
+                        }
+
+                        console.log( $( this ).text() + " < " + $( this ).next().text() + " = " + resultat);
+                    }
+                });
+
+
+                // 2 - IMPRIMIM LA RESPOSTA AL <INPUT>
+                if (!resposta){
+
+                    $("input").val("NO està ordenat").css("background-color", "red");
+                }
+                else{
+
+                    $("input").val("Està ordenat").css("background-color", "green");
+                }
+            });
+        });
+    </script>
+
+</head>
+<body>
+    
+    <header>
+        <h1>CIUTATS DE CATALUNYA</h1>
+        <h3>Ordeneu-les alfabèticament</h3>
+        <p>Utilitzeu el Drag and Drop de jQUERY</p>
+    </header>
+    <!-- La llista a ordenar -->
+    <ol>
+        <li >Tarragona</li>
+        <li >Girona</li>
+        <li >Lleida</li>
+        <li >Manresa</li>
+        <li >Granollers</li>
+        <li >Barcelona</li>
+        <li >Tortosa</li>
+        <li >Cardona</li>
+        <li >Andorra</li>
+    </ol>
+    
+    <button>Comprova</button> <!-- Botó de comprovació --> 
+    <input type="text" value="ordeneu-les alfabèticament" /> <!-- Quadre de text pel missatge -->
+         
+
+</body>
+</html>
