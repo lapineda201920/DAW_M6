@@ -26,171 +26,172 @@
         
         <div class="container">
 
-            <div class="row justify-content-between">
+            <form action="#" method="POST">
+                <div class="row justify-content-between">
 
-                <div class="col-8">
+                    <div class="col-8">
 
-                    <!--MARCA DE PROCESADOR-->
-                    <div class="row">
-                        <h4 class="col-12 text-center">
-                            <strong>Sel·leciona una marca de Processador</strong>
+                        <!--MARCA DE PROCESADOR-->
+                        <div class="row">
+                            <h4 class="col-12 text-center">
+                                <strong>Sel·leciona una marca de Processador</strong>
+                            </h4>
+                            <div class="col-12 text-center">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" id="intel" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Intel</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" id="amd" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">AMD</label>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        
+                        <!--PROCESSADOR-->
+                        <button type="button" style="border:1px solid black" class="btn btn-block" data-toggle="collapse" data-target="#processador">Processadors</button>
+                
+                        <div id="processador" class="collapse">
+
+                        </div>
+                        <br/>
+
+                        <!--PLACA BASE-->
+                        <button type="button" style="border:1px solid black" class="btn btn-block" data-toggle="collapse" data-target="#placaBase">Plaques Base</button>
+                
+                        <div id="placaBase" class="collapse">
+                            
+                        </div>
+                        <br/>
+
+                        <!--RAM-->
+                        <button type="button" style="border:1px solid black" class="btn btn-block" data-toggle="collapse" data-target="#ram">Memòria RAM</button>
+                
+                        <div id="ram" class="collapse">
+                            
+                        </div>
+                        <br/>
+
+                        <!--VENTILADORS CPU-->
+                        <button type="button" style="border:1px solid black" class="btn btn-block" data-toggle="collapse" data-target="#ventiladorsCPU">Ventiladors CPU</button>
+                
+                        <div id="ventiladorsCPU" class="collapse">
+                        
+                        </div>
+                        <br/>
+
+                        <!--DISC DUR-->
+                        <button type="button" style="border:1px solid black" class="btn btn-block" data-toggle="collapse" data-target="#discDur">Disc Dur</button>
+                
+                        <div id="discDur" class="collapse">
+                            
+                        </div>
+                        <br/>
+
+                        <!--TORRE-->
+                        <button type="button" style="border:1px solid black" class="btn btn-block" data-toggle="collapse" data-target="#torre">Caixes / Torres</button>
+                
+                        <div id="torre" class="collapse">
+                        
+                        </div>
+                        <br/>
+
+                        <!--FONT ALIMENTACIÓ-->
+                        <button type="button" style="border:1px solid black" class="btn btn-block" data-toggle="collapse" data-target="#fontAlimentacio">Fonts d'Alimentació</button>
+                
+                        <div id="fontAlimentacio" class="collapse">
+                            
+                        </div>
+                        <br/>
+
+                        <!--MONATGE-->
+                        <button type="button" style="border:1px solid black" class="btn btn-block" data-toggle="collapse" data-target="#montatge">Montatge</button>
+                
+                        <div id="montatge" class="collapse">
+                            <br/>
+                            <div class="row">
+                                <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-8">
+                                    <h4 class="product-name"><strong>Vols que realitzem el muntatge?</strong></h4>
+                                </div>
+                                <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
+                                    <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
+                                        <h6><strong>50€</span></strong></h6>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4">
+                                        <div class="quantity">
+                                            <input type="checkbox" id="model" onclick="afegirProducte(id, 'Montatge', 'Montatge del PC', '50')">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <br/>
+
+                        <!--INSTAL·LACIÓ S.O. I CONTROLADORS-->
+                        <button type="button" style="border:1px solid black" class="btn btn-block" data-toggle="collapse" data-target="#instalacioSO">Instal·lació SO i controladors</button>
+                
+                        <div id="instalacioSO" class="collapse">
+                            <br/>
+                            <div class="row">
+                                <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-8">
+                                    <h4 class="product-name"><strong>Per què configurar un PC tu mateix?</strong></h4>
+                                    <h4>
+                                        <small>El nostre equip de professionals instal·laràn el SO i els últims controladros, tot a punt, per a poder utilitzar l'ordinador!</small>
+                                    </h4>
+                                </div>
+                                <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
+                                    <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
+                                        <h6><strong>25€</strong></h6>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4">
+                                        <div class="quantity">
+                                            <input type="checkbox" id="instalacio" onclick="afegirProducte(id, 'Instal·lació PC', 'Instal·lació del PC i controladors', '25')">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <br/>
+
+                    </div>
+
+
+                    <!-------------------------------------------------------------------->
+
+
+                    <!--CABÀS DE LA COMPRA-->
+                    <div class="col-3">
+
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-muted">Cabàs de Compra</span>
+                            <span id="contadorCabasCompra" class="badge badge-secondary badge-pill">0</span>
                         </h4>
-                        <div class="col-12 text-center">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" id="intel" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                <label class="form-check-label" for="inlineRadio1">Intel</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" id="amd" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                <label class="form-check-label" for="inlineRadio2">AMD</label>
-                            </div>
-                        </div>
-                    </div>
-                    <br/>
-                    
-                    <!--PROCESSADOR-->
-                    <button type="button" style="border:1px solid black" class="btn btn-block" data-toggle="collapse" data-target="#processador">Processadors</button>
-            
-                    <div id="processador" class="collapse">
 
-                    </div>
-                    <br/>
+                        <!--<UL> DE PRODUCTES-->
+                        <ul class="list-group mb-3" id="cabasCompra">
 
-                    <!--PLACA BASE-->
-                    <button type="button" style="border:1px solid black" class="btn btn-block" data-toggle="collapse" data-target="#placaBase">Plaques Base</button>
-            
-                    <div id="placaBase" class="collapse">
-                        
-                    </div>
-                    <br/>
+                            <!--PRODUCTE-->
+                        </ul>
+                        <ul class="list-group mb-3" id="totalCabasCompra">
 
-                    <!--RAM-->
-                    <button type="button" style="border:1px solid black" class="btn btn-block" data-toggle="collapse" data-target="#ram">Memòria RAM</button>
-            
-                    <div id="ram" class="collapse">
-                        
-                    </div>
-                    <br/>
+                            <!--TOTAL-->
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Total sense IVA</span>
+                                <strong id="totalSense">0€</strong>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Total amb IVA</span>
+                                <strong id="totalAmb">0€</strong>
+                            </li>
+                        </ul>
 
-                    <!--VENTILADORS CPU-->
-                    <button type="button" style="border:1px solid black" class="btn btn-block" data-toggle="collapse" data-target="#ventiladorsCPU">Ventiladors CPU</button>
-            
-                    <div id="ventiladorsCPU" class="collapse">
-                       
+                        <button type="submit" class="btn btn-success btn-block">Tramètre Producte!</button>
                     </div>
-                    <br/>
-
-                    <!--DISC DUR-->
-                    <button type="button" style="border:1px solid black" class="btn btn-block" data-toggle="collapse" data-target="#discDur">Disc Dur</button>
-            
-                    <div id="discDur" class="collapse">
-                        
-                    </div>
-                    <br/>
-
-                    <!--TORRE-->
-                    <button type="button" style="border:1px solid black" class="btn btn-block" data-toggle="collapse" data-target="#torre">Caixes / Torres</button>
-            
-                    <div id="torre" class="collapse">
-                       
-                    </div>
-                    <br/>
-
-                    <!--FONT ALIMENTACIÓ-->
-                    <button type="button" style="border:1px solid black" class="btn btn-block" data-toggle="collapse" data-target="#fontAlimentacio">Fonts d'Alimentació</button>
-            
-                    <div id="fontAlimentacio" class="collapse">
-                        
-                    </div>
-                    <br/>
-
-                    <!--MONATGE-->
-                    <button type="button" style="border:1px solid black" class="btn btn-block" data-toggle="collapse" data-target="#montatge">Montatge</button>
-            
-                    <div id="montatge" class="collapse">
-                        <br/>
-                        <div class="row">
-                            <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-8">
-                                <h4 class="product-name"><strong>Vols que realitzem el muntatge?</strong></h4>
-                            </div>
-                            <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
-                                <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
-                                    <h6><strong>50€</span></strong></h6>
-                                </div>
-                                <div class="col-4 col-sm-4 col-md-4">
-                                    <div class="quantity">
-                                        <input type="checkbox" id="model" onclick="afegirProducte(id, 'Montatge', 'Montatge del PC', '50')">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                    </div>
-                    <br/>
-
-                    <!--INSTAL·LACIÓ S.O. I CONTROLADORS-->
-                    <button type="button" style="border:1px solid black" class="btn btn-block" data-toggle="collapse" data-target="#instalacioSO">Instal·lació SO i controladors</button>
-            
-                    <div id="instalacioSO" class="collapse">
-                        <br/>
-                        <div class="row">
-                            <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-8">
-                                <h4 class="product-name"><strong>Per què configurar un PC tu mateix?</strong></h4>
-                                <h4>
-                                    <small>El nostre equip de professionals instal·laràn el SO i els últims controladros, tot a punt, per a poder utilitzar l'ordinador!</small>
-                                </h4>
-                            </div>
-                            <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
-                                <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
-                                    <h6><strong>25€</strong></h6>
-                                </div>
-                                <div class="col-4 col-sm-4 col-md-4">
-                                    <div class="quantity">
-                                        <input type="checkbox" id="instalacio" onclick="afegirProducte(id, 'Instal·lació PC', 'Instal·lació del PC i controladors', '25')">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                    </div>
-                    <br/>
-
                 </div>
-
-
-                <!-------------------------------------------------------------------->
-
-
-                <!--CABÀS DE LA COMPRA-->
-                <div class="col-3">
-
-                    <h4 class="d-flex justify-content-between align-items-center mb-3">
-                        <span class="text-muted">Cabàs de Compra</span>
-                        <span id="contadorCabasCompra" class="badge badge-secondary badge-pill">0</span>
-                    </h4>
-
-                    <!--<UL> DE PRODUCTES-->
-                    <ul class="list-group mb-3" id="cabasCompra">
-
-                        <!--PRODUCTE-->
-                    </ul>
-                    <ul class="list-group mb-3" id="totalCabasCompra">
-
-                        <!--TOTAL-->
-                        <li class="list-group-item d-flex justify-content-between">
-                            <span>Total sense IVA</span>
-                            <strong id="totalSense">0€</strong>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between">
-                            <span>Total amb IVA</span>
-                            <strong id="totalAmb">0€</strong>
-                        </li>
-                    </ul>
-
-                    <button type="button" class="btn btn-success btn-block">Tramètre Producte!</button>
-                </div>
-            </div>
-
+            </form>
         </div>
 
         <footer class="container-fluid p-3" style="border-top: 1px solid black;background-color: #e5e5e5;">

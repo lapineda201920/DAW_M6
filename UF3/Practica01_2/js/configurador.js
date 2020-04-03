@@ -340,16 +340,7 @@ function obrir(){
                             h6.appendChild(h6strong);
                     div3_1.appendChild(h6);
                     
-                    var div3_2 = document.createElement("div");
-                    div3_2.setAttribute("class", "col-4 col-sm-4 col-md-4");
                     
-                        var input = document.createElement("input");
-                            input.setAttribute("type", "number");
-                            input.setAttribute("max", 5);
-                            input.setAttribute("min", 1);
-                            input.setAttribute("size", 4);
-                            input.setAttribute("value", 1);
-                    div3_2.appendChild(input);
 
                     var div3_3 = document.createElement("div");
                     div3_3.setAttribute("class", "col-2 col-sm-2 col-md-2 text-right");
@@ -361,7 +352,7 @@ function obrir(){
                     div3_3.appendChild(inputCheck);
 
                 div3.appendChild(div3_1);
-                div3.appendChild(div3_2);
+
                 div3.appendChild(div3_3);
     
             divRow.appendChild(div1);
