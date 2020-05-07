@@ -1,0 +1,16 @@
+body{
+
+    margin-top: 30px !important;
+    width: 50%;
+    padding: 10px;
+    background-color: white;
+}
+
+ul{
+
+    list-style-type:none;
+    border: 2px solid black;
+}
+li{
+    margin: 5px;
+}
